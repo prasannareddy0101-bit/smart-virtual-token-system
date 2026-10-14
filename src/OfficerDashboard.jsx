@@ -12,7 +12,7 @@ function OfficerDashboard() {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const API_URL = 'http://localhost:5000';
+  const API_URL = 'http://192.168.0.5:5000';
 
   // =========================
   // AUTHENTICATION HEADERS

@@ -23,7 +23,7 @@ function UserPage() {
       setMessage('')
 
       const response = await fetch(
-        'http://localhost:5000/token',
+        'http://192.168.0.5:5000/token',
         {
           method: 'POST',
           headers: {
@@ -63,7 +63,7 @@ function UserPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/queue/info/${token}`
+        `http://192.168.0.5:5000/queue/info/${token}`
       )
 
       if (!response.ok) {

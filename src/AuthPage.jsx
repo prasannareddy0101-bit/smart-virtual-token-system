@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './AuthPage.css';
 
-const API_URL = 'http://localhost:5000';
-
+const API_URL = 'http://192.168.0.5:5000';
 function AuthPage({ mode = 'login', role = 'user' }) {
   const navigate = useNavigate();
   const location = useLocation();

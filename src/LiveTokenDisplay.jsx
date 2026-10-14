@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { playNotificationSound } from "./utils/notificationSound";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://192.168.0.5:5000";
 
 export default function LiveTokenDisplay() {
   const [tokens, setTokens] = useState([]);
